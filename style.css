@@ -1,0 +1,70 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+body{
+    background-color: black; 
+    overflow-x: hidden;
+    color: white;
+}
+nav {
+    background-color: rgb(1, 1, 44);
+}
+
+.links a:hover {
+    background-color: blue;
+}
+
+.images img {
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.6rem;
+    }
+}
+
+
+.bg-green {
+    background-color: rgba(0, 255, 0, 0.1) !important;
+    color: rgb(20, 186, 128);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.bg-red {
+    background-color: rgba(255, 0, 0, 0.1) !important;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.bg-blue {
+    background-color: rgba(62, 168, 243, 0.1) !important;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.dev .card {
+    background-color: rgba(225, 206, 206, 0.2) !important;
+    border-radius: 10px;
+}
+
+.category{
+    background-color: #2210709b;
+}
+
+.category button{
+    color:aliceblue
+}
+
+.category button:hover{
+    color: rgb(181, 120, 238);
+}

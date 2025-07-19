@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/ec7beee980.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.2/feather.min.js"
+        integrity="sha512-zMm7+ZQ8AZr1r3W8Z8lDATkH05QG5Gm2xc6MlsCdBz9l6oE8Y7IXByMgSm/rdRQrhuHt99HAYfMljBOEZ68q5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Math&family=Lobster&family=Merienda:wght@300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="px-4">
+            <a class=" navbar-brand" href="index.html">
+                <img src="images/logo_trans.png" alt="" width="200" height="80">
+            </a>
+        </div>
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <div class="dropdown px-2 ">
+                        <button class="btn btn-outline-primary text-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="p-1">Category</span> <i class="bi bi-list fs-6"></i>
+                        </button>
+                        <ul class="dropdown-menu bg-dark links" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item m-1 text-white" href="#">Fullstack Development</a></li>
+                            <li><a class="dropdown-item m-1 text-white" href="#">Design</a></li>
+                            <li><a class="dropdown-item m-1 text-white" href="#">Mobile App Development</a></li>
+                            <li><a class="dropdown-item m-1 text-white" href="#">Marketing</a></li>
+                            <li><a class="dropdown-item m-1 text-white" href="#">Business</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white px-2 px-md-2" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown px-1">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu bg-dark links" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item text-white" href="#">Courses</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Project</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Career</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Jobs</a></li>
+                        <li>
+                            <hr style="border: 1px solid white;">
+                        </li>
+                        <li><a class="dropdown-item text-white" href="#">About</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Contact</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Help</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown px-1">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Accounts
+                    </a>
+                    <ul class="dropdown-menu bg-dark links" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item text-white" href="#"><i
+                                    class="fa-solid fa-user-tie me-2"></i>Instructor</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i
+                                    class="fa-solid fa-user-graduate me-2"></i>Student</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i
+                                    class="fa-solid fa-user-gear me-2"></i>Admin</a></li>
+                        <li>
+                            <hr style="border: 1px solid white;">
+                        </li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-pencil-square me-2"></i>Edit
+                                Profile</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-gear me-2"></i>Profile
+                                Settings</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-trash me-2"></i>Delete
+                                Profile</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white px-2 px-md-2" href="#">Docs</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-light mx-2 px-3" type="submit">Login</button>
+                <button class="btn bg-light mx-3 px-3" type="submit">Signup</button>
+            </form>
+        </div>
+
+
+
+    </nav>
+    <!-- carousel -->
+
+    <!-- Bootstrap 5 Carousel -->
+    <div id="eduforgeCarousel" class="carousel slide mt-1" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#eduforgeCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#eduforgeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#eduforgeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#eduforgeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#eduforgeCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner images">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/welcome.jpg" class="d-block img-fluid w-100" alt="Welcome to EduForge">
+                <div class="carousel-caption text-start">
+                    <h2 class="fw-bold">Welcome to EduForge</h2>
+                    <p>Forge your future with top-rated online courses and
+                        expert-led learning paths.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="images/coding.jpg" class="d-block img-fluid w-100" alt="Upgrade Skills">
+                <div class="carousel-caption text-start">
+                    <h2 class="fw-bold">Upgrade Your Skills</h2>
+                    <p>Master coding, design, business and more at a time.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="images/explore.jpg" class="d-block img-fluid w-100" alt="Learn by Doing">
+                <div class="carousel-caption text-start">
+                    <h2 class="fw-bold">Learn by Doing</h2>
+                    <p>Interactive projects and real-world practice to boost your confidence.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img src="images/img9.jpg" class="d-block img-fluid w-100" alt="Get Certified">
+                <div class="carousel-caption text-start">
+                    <h2 class="fw-bold">Learn at Your Pace </h2>
+                    <p>Flexible learning schedules designed to suit your lifestyle.</p>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#eduforgeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#eduforgeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container mx-auto row row-cols-1 row-cols-md-4 row-cols-lg-4 row-cols-sm-2 g-sm-3 g-4  my-5">
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3 p-2">
+                <img src="images/award.svg" height="45px" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-center">316,000+</h6>
+                    <p class="small card-text small fw-lighter text-center text-muted">Qualified Instructor</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3 p-2">
+                <img src="images/monitor.svg" height="45px" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-center">41,000+</h6>
+                    <p class="small card-text small fw-lighter text-center text-muted">Online Courses</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3 p-2">
+                <img src="images/circle-check-solid.svg" height="45px" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-center">179,000+</h6>
+                    <p class="small card-text small fw-lighter text-center text-muted">Certified Courses</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3 p-2">
+                <img src="images/users (2).svg" height="45px" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-center">1.8 Billion+</h6>
+                    <p class="small card-text small fw-lighter text-center text-muted">Course enrolments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cards -->
+
+    <!-- Courses Cards -->
+    <h2 class="w-100 mt-5 mb-4 text-white text-center">Most Popular Courses</h2>
+    <!-- courses category -->
+    <section class=" container d-flex flex-wrap justify-content-evenly h-25 border-bottom my-5 p-3 category">
+        <button onclick="changeTab('dev')" class="btn" id="dev_btn">Development</button>
+        <button onclick="changeTab('design')" class="btn" id="design_btn">Design</button>
+        <button onclick="changeTab('data')" class="btn" id="data_btn">Data Science</button>
+        <button onclick="changeTab('AI')" class="btn" id="AI_btn">AI & ML</button>
+        <button onclick="changeTab('cyber')" class="btn" id="cyber_btn">Cyber Security</button>
+    </section>
+    <!-- courses category -->
+
+    <!-- Development Courses -->
+    <div class="container mx-auto row row-cols-1 row-cols-md-4 w-100 g-4 dev d-flex" id="dev">
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/python.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Python Development</h6>
+                    <p class=" small text-muted">By: Lia Sen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 30.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/JS.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">JavaScript</h6>
+                    <p class=" small text-muted">By: Nilo Ray</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 30.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/react.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">React</h6>
+                    <p class=" small text-muted">By: Mira Ken</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 38.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/java.jpeg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">Java Development</h6>
+                    <p class=" small text-muted">By: Rin Val</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 40.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/angular.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Angular</h6>
+                    <p class=" small text-muted">By: Sela Roen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 38.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/bootstrap.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">Bootstrap 5</h6>
+                    <p class=" small text-muted">By: Kian Vel</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 25.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/kotlin.jpeg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">Kotlin Multiplatform</h6>
+                    <p class=" small text-muted">By: Tian Mer</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 50.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white">
+                <img src="images/Courses-Logo/Development/CPP.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">C++</h6>
+                    <p class=" small text-muted">By: Zoe Rin</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 40.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Development Courses -->
+
+    <!-- Design -->
+    <div class="container mx-auto row row-cols-1 my-2 row-cols-md-4 w-100 g-4 design d-none" id="design">
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Design/UI.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">UI/UX Design</h6>
+                    <p class=" small text-muted">By: Lia Sen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 30.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Design/Figma-Image.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">Figma Course</h6>
+                    <p class=" small text-muted">By: Nilo Ray</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 30.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Design/PS.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">Adobe Photoshop Course</h6>
+                    <p class=" small text-muted">By: Mira Ken</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 30.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Design/web.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Web Design</h6>
+                    <p class=" small text-muted">By: Rin Val</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 40.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Design -->
+
+    <!-- Data Science -->
+    <div class="container mx-auto row row-cols-1 my-2 row-cols-md-4 w-100 g-4 data d-none" id="data">
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Data Science/Data-science.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">Data Science</h6>
+                    <p class=" small text-muted">By: Lia Sen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 60.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Data Science/Python-for-data-analysis.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Python for Data Analysis</h6>
+                    <p class=" small text-muted">By: Nilo Ray</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 50.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Data Science/data-mining.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">Data Mining</h6>
+                    <p class=" small text-muted">By: Mira Ken</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 55.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/Data Science/big-data.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Big Data Analytics</h6>
+                    <p class=" small text-muted">By: Rin Val</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 60.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Science -->
+
+    <!-- AI -->
+    <div class="container mx-auto row row-cols-1 my-2 row-cols-md-4 w-100 g-4 AI d-none" id="AI">
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/AI-basic.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">AI Fundamentals</h6>
+                    <p class=" small text-muted">By: Lia Sen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 70.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/ML.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">Machine Learning Applications</h6>
+                    <p class=" small text-muted">By: Nilo Ray</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 80.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/Nlp.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Natural Language Processing</h6>
+                    <p class=" small text-muted">By: Mira Ken</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 100.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/Generative_AI_2.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Generative AI</h6>
+                    <p class=" small text-muted">By: Rin Val</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 120.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/DL.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">Deep Learning</h6>
+                    <p class=" small text-muted">By: Sela Roen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 80.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/AI-ENG.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">AI Engineering</h6>
+                    <p class=" small text-muted">By: Kian Vel</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 200.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/Ml_python.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">Beginner</span>
+                    <h6 class="card-title fw-bold">Machine Learning with Python</h6>
+                    <p class=" small text-muted">By: Tian Mer</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 100.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/AI_ML/prompt-engineering.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">Prompt Engineering</h6>
+                    <p class=" small text-muted">By: Zoe Rin</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 150.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AI-->
+
+    <!-- Cyber -->
+    <div class="container mx-auto row row-cols-1 my-2 row-cols-md-4 w-100 g-4 cyber d-none" id="cyber">
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/CyberSecurity/CO.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-green">beginner</span>
+                    <h6 class="card-title fw-bold">Fundamentals of Cybersecurity</h6>
+                    <p class=" small text-muted">By: Lia Sen</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 70.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/CyberSecurity/ETHICAL-HACKING.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Ethical Hacking</h6>
+                    <p class=" small text-muted">By: Nilo Ray</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 60.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/CyberSecurity/network.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-blue text-info">Intermediate</span>
+                    <h6 class="card-title fw-bold">Network Security</h6>
+                    <p class=" small text-muted">By: Mira Ken</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 80.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white rounded-3">
+                <img src="images/Courses-Logo/CyberSecurity/S_A_D.png" class="card-img-top" alt="...">
+                <div class="card-body border-bottom border-secondary">
+                    <span class="badge p-1 px-2 mt-2 mb-3 bg-red text-danger">Advance</span>
+                    <h6 class="card-title fw-bold">Secure App Development</h6>
+                    <p class=" small text-muted">By: Rin Val</p>
+                    <p class="small text-warning"><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i><i
+                            class="bi bi-star-fill px-1 small"></i><i class="bi bi-star-fill px-1 small"></i>4.5</p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="row align-items-center p-1 fw-bold">
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1">$ 80.00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="small mb-0 mt-1 text-end"><i class="bi bi-cart text-info me-2"></i> Enroll Now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cyber -->
+
+
+    <!-- Courses Cards -->
+
+    <!-- Practice -->
+
+    <div class="container my-5">
+        <h2 class="text-center">Practice Coding & Hiring Assessments</h2>
+        <p class="mx-auto my-3 lh-lg text-center">Level up your coding skills by practicing the hiring assessments of
+            your dream companies
+            & ace your placement
+            game!</p>
+        <section class="my-5 w-100 mx-auto">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mx-auto">
+                <div class="col">
+                    <div class="card mb-3 text-white bg-dark">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/icons/web-programming.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coding Practice</h5>
+                                    <p class="card-text">Sharpen your programming skills with hands-on coding problems
+                                        across multiple languages and difficulty levels.</p>
+                                    <p class="card-text"><small class="text-info fs-6">Start Practice<i
+                                                class="bi bi-arrow-right mx-2"></i></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 text-white bg-dark">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/icons/aptitude.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Skill Assessment</h5>
+                                    <p class="card-text">Evaluate your technical knowledge through curated quizzes and
+                                        get personalized feedback to improve faster.</p>
+                                    <p class="card-text"><small class="text-info fs-6">Start Assessment<i
+                                                class="bi bi-arrow-right mx-2"></i></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 text-white bg-dark">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/icons/project-management.png" class="img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Projects</h5>
+                                    <p class="card-text">Build real-world projects to strengthen your portfolio and gain
+                                        practical experience in web and software development.</p>
+                                    <p class="card-text"><small class="text-info fs-6">Start Practice<i
+                                                class="bi bi-arrow-right mx-2"></i></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 text-white bg-dark">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/icons/script.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Interview Preparation</h5>
+                                    <p class="card-text">Master technical and HR interviews with mock tests, curated
+                                        questions, and step-by-step guidance from experts.</p>
+                                    <p class="card-text"><small class="text-info fs-6">Start Preparation<i
+                                                class="bi bi-arrow-right mx-2"></i></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Practice -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/logo_trans.png" alt="" width="200" height="74">
+                            </a>
+                        </div>
+                        <p class="lh-lg">
+                            EduForge education theme, built specifically for the education centers which is dedicated to teaching and involve learners.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Company
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">News & Blogs</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Careers</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Community
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Help & Support</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-print me-3"></i> + 91 8745678945</p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 9745678890</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">EduForge</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
